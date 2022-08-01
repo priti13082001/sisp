@@ -1,0 +1,160 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="Logo.png">
+    <title>SISP</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="hp.css" />
+    <script src="https://kit.fontawesome.com/890a324f84.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <section class="showcase-area" id="showcase">
+      <div class="showcase-container">
+        <div class="main-logo">
+        <img src="Logo.png" alt="Logo" />
+        </div>
+      </div>
+    </section>
+    <section id="functions">
+      <h2 class="function-title">Student Information System for Placement</h2>
+      <div class="function-container">
+        <div class="function-box">
+              <p class="function-name">Automation</p>
+          <p class="function-text">
+            This is one of the major problems which the placement team, face in our campus. We
+            are trying to
+            solve this issue by creating a separate portal for placement team so that they can
+            switch over from
+            the manually operated excel sheets to fast and efficient database management with
+            quick and easy access
+            to the student database.
+          </p>
+         
+        </div>
+        <div class="function-box">
+              <p class="function-name">Templates</p>
+          <p class="function-text">
+            One of the most amazing feature of our product is to generate and store views of data 
+            based on the templates provided by the companies, which reduces redundant selections and filtering.
+            Also, respects the integrity of the database and makes it error-free.
+          </p>
+        </div>
+        <div class="function-box">
+              <p class="function-name">Future Prospects</p>
+          <p class="function-text">
+            We at SISP are trying to create a platform where all the work of
+            the placement team can be managed efficiently.
+            After successfully implementing basic components, we plan on integrating this portal
+            further, such as creating a
+            summary sheet of students based on companies etc.
+          </p>
+        </div>
+      </div>
+      <div class="Started">
+        <p class="Get-Started">Get Started</p>
+    </div>
+    <div class="center">
+    <button type="submit" class="login-btn" onClick="loginFunction()"><i class="fa-solid fa-right-to-bracket awesome"></i>LOGIN</button>
+    </div>
+    </section>
+    <section class="about-area" id="aboutarea">
+      <div class="about-container">
+        <h2 class="about-us">About Us</h2> 
+      </div>
+    </section>
+    <section id="about-dev">
+      <div class="about-dev-container">
+        <div class="dev-card">
+          <img src="Naina1.jfif" alt="Image">
+          <div class="details">
+              <h2>Naina Sharma</h2>
+          </div>
+          <div class="container-2">
+          <div class="id"><i class="fa-solid fa-briefcase brief"></i>Full-Stack Developer</div>
+          <div class="email"><i class="fa-solid fa-envelope env"></i>btbtc19262_naina@banasthali.in</div>
+          </div>
+      </div>
+
+      <div class="dev-card">
+        <img src="Mitali1.jfif" alt="Image">
+        <div class="details">
+            <h2>Mitali Sharma</h2>
+        </div>
+        <div class="container-2">
+        <div class="id"><i class="fa-solid fa-briefcase brief"></i>Full-Stack Developer</div>
+        <div class="email"><i class="fa-solid fa-envelope env"></i>btbtc19215_mitali@banasthali.in</div>
+        </div>
+    </div>
+
+    <div class="dev-card">
+      <img src="Priti1.jfif" alt="Image">
+      <div class="details">
+          <h2>Priti Kumari</h2>
+      </div>
+      <div class="container-2">
+      <div class="id"><i class="fa-solid fa-briefcase brief"></i>Full-Stack Developer</div>
+      <div class="email"><i class="fa-solid fa-envelope env"></i>btbtc19118_priti@banasthali.in</div>
+      </div>
+  </div>
+
+  <div class="dev-card">
+    <img src="Krishna1.jfif" alt="Image">
+    <div class="details">
+        <h2>Krishna Tewari</h2>
+    </div>
+    <div class="container-2">
+    <div class="id"><i class="fa-solid fa-briefcase brief"></i>Full-Stack Developer</div>
+    <div class="email"><i class="fa-solid fa-envelope env"></i>btbtc19232_krishna@banasthali.in</div>
+    <div class="container-2">
+</div>
+      </div>
+    </section>
+    <footer id="footer">
+      <h2>SISP &copy;   All rights reserved.</h2>
+    </footer>
+  </body>
+  <!-- 
+    .................../ JS Code for smooth scrolling /...................... -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Add smooth scrolling to all links
+      $("a").on("click", function (event) {
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $("html, body").animate(
+            {
+              scrollTop: $(hash).offset().top,
+            },
+            800,
+            function () {
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            }
+          );
+        } // End if
+      });
+    });
+    function loginFunction() {
+         window.location.href="login.php";  
+       }
+    
+  </script>
+</html>
